@@ -37,6 +37,13 @@ func TestGauge(t *testing.T) {
 	})
 }
 
+func TestSet(t *testing.T) {
+	testOutput(t, "test_key_0:1|s\ntest_key_1:1|s", func(c *Client) {
+		c.Set(testKey + "_0")
+		c.Set(testKey + "_1")
+	})
+}
+
 func TestTiming(t *testing.T) {
 	testOutput(t, "test_key:6|ms", func(c *Client) {
 		c.Timing(testKey, 6)

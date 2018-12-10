@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0] - 2018-12-10
+- `Set` new method for send metrics with unique bucket
+
 ## [2.0.0] - 2016-03-20
 
 - `New` signature changed. The default address used is now ":8125". To use
